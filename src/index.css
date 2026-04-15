@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --color-card-blue-500: hsl(223, 87%, 63%);
+  --color-card-blue-200: hsl(223, 100%, 88%);
+  --color-card-red-400: hsl(354, 100%, 66%);
+  --color-card-gray-400: hsl(0, 0%, 59%);
+  --color-card-blue-950: hsl(209, 33%, 12%);
+  --font-card-libre-franklin:
+    'Libre Franklin', ui-sans-serif, system-ui, sans-serif;
+  --spacing-card-0: 0px;
+  --spacing-card-100: 8px;
+  --spacing-card-200: 16px;
+  --spacing-card-300: 24px;
+}
+
+@layer base {
+  body {
+    background-color: white;
+    font-family: var(--font-card-libre-franklin);
+  }
+}
