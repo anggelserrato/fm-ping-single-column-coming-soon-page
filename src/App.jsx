@@ -40,10 +40,14 @@ function App() {
   };
 
   return (
-    <main className="mx-auto max-w-[320px]">
-      <header>
-        <img src={pingIcon} alt="Ping logo" className="h-[15px] w-[53px]" />
-        <h1 className="text-[20px] leading-[125%] font-light text-card-gray-400">
+    <main className="mx-auto flex min-h-screen max-w-[320px] flex-col items-center pt-[84px] pb-[34px]">
+      <header className="mb-card-500 flex flex-col items-center">
+        <img
+          src={pingIcon}
+          alt="Ping logo"
+          className="mb-card-500 h-card-200 w-[54px]"
+        />
+        <h1 className="mb-card-100 text-[20px] leading-[125%] font-light text-card-gray-400">
           We are launching{' '}
           <span className="font-bold text-card-blue-950">soon!</span>
         </h1>
@@ -52,43 +56,49 @@ function App() {
         </p>
       </header>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          id="email"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email address..."
-          className="w-full rounded-[28px] border border-card-blue-200 px-6 py-3 text-[12px] leading-[125%] placeholder:text-card-blue-200 focus:outline-card-blue-500"
-          aria-invalid={error ? 'true' : 'false'}
-          aria-describedby={error ? 'email-error' : undefined}
-        />
-        <label htmlFor="email" className="sr-only">
-          Email address
-        </label>
-        {error && (
-          <p
-            id="email-error"
-            className="text-[10px] leading-[125%] font-normal text-card-red-400 italic"
-            aria-live="polite"
-          >
-            {error}
-          </p>
-        )}
-        <button
-          type="submit"
-          className="w-full cursor-pointer rounded-[28px] bg-card-blue-500 py-3 text-[12px] leading-[125%] font-semibold text-white shadow-[0_5px_10px_2px_rgba(79,125,243,0.23)] transition-colors duration-200 hover:bg-card-blue-500/75"
+      <section className="h-[130px] w-[90%] justify-start">
+        <form
+          onSubmit={handleSubmit}
+          noValidate
+          className="flex w-full flex-col items-center justify-center gap-card-100"
         >
-          Notify Me
-        </button>
-      </form>
+          <input
+            id="email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Your email address..."
+            className="h-card-500 w-full rounded-[28px] border border-card-blue-200 px-6 py-4 text-[12px] leading-[125%] placeholder:text-card-blue-200 focus:outline-card-blue-500"
+            aria-invalid={error ? 'true' : 'false'}
+            aria-describedby={error ? 'email-error' : undefined}
+          />
+          <label htmlFor="email" className="sr-only">
+            Email address
+          </label>
+          {error && (
+            <p
+              id="email-error"
+              className="mb-card-200 text-[10px] leading-[125%] font-normal text-card-red-400 italic"
+              aria-live="polite"
+            >
+              {error}
+            </p>
+          )}
+          <button
+            type="submit"
+            className="h-card-500 w-full cursor-pointer rounded-[28px] bg-card-blue-500 py-3 text-[12px] leading-[125%] font-semibold text-white shadow-[0_5px_10px_2px_rgba(79,125,243,0.23)] transition-colors duration-200 hover:bg-card-blue-500/75"
+          >
+            Notify Me
+          </button>
+        </form>
+      </section>
 
-      <figure>
+      <figure className="mt-auto">
         <img src={dashboardIllustration} alt="Dashboard illustration" />
       </figure>
 
-      <footer className="flex flex-col items-center">
-        <ul className="flex flex-row items-center gap-card-200">
+      <footer className="mt-auto flex flex-col items-center">
+        <ul className="mb-card-300 flex flex-row items-center gap-card-200">
           {socialLinks.map((link) => (
             <li>
               <a
