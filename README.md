@@ -28,6 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="1920" height="1440" alt="ping single column coming soon page" src="https://github.com/user-attachments/assets/9d67c818-eb19-477f-8d41-c41c23bd79b8" />
+
 ### Links
 
 - Solution URL: [View Code](https://github.com/anggelserrato/fm-ping-single-column-coming-soon-page)
