@@ -30,7 +30,9 @@ function App() {
   const handleSubmit = (e) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     e.preventDefault();
-    if (!emailRegex.test(email)) {
+    if (!email) {
+      setError('Whoops! It looks like you forgot to add your email');
+    } else if (!emailRegex.test(email)) {
       setError('Please provide a valid email address');
     } else {
       setError('');
