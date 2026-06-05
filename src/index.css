@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('./fonts/LibreFranklin.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
 
 @theme {
   --color-card-blue-500: hsl(223, 87%, 63%);
@@ -8,20 +13,18 @@
   --color-card-red-400: hsl(354, 100%, 66%);
   --color-card-gray-400: hsl(0, 0%, 59%);
   --color-card-blue-950: hsl(209, 33%, 12%);
-  --font-card-libre-franklin:
-    'Libre Franklin', ui-sans-serif, system-ui, sans-serif;
-  --spacing-card-0: 0px;
-  --spacing-card-100: 8px;
-  --spacing-card-200: 16px;
-  --spacing-card-300: 24px;
-  --spacing-card-400: 32px;
-  --spacing-card-500: 40px;
-  --spacing-card-600: 48px;
+  --font-sans: 'Libre Franklin', ui-sans-serif, system-ui, sans-serif;
+  --spacing-card-0: 0rem;
+  --spacing-card-100: 0.5rem; /* 8px */
+  --spacing-card-200: 1rem; /* 16px */
+  --spacing-card-300: 1.5rem; /* 24px */
+  --spacing-card-400: 2rem; /* 32px */
+  --spacing-card-500: 2.5rem; /* 40px */
+  --spacing-card-600: 3rem; /* 48px */
 }
 
 @layer base {
   body {
     background-color: white;
-    font-family: var(--font-card-libre-franklin);
   }
 }
