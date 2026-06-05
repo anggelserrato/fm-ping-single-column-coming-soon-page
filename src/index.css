@@ -8,11 +8,14 @@
 }
 
 @theme {
+  --color-card-blue-950: hsl(209, 33%, 12%);
   --color-card-blue-500: hsl(223, 87%, 63%);
   --color-card-blue-200: hsl(223, 100%, 88%);
-  --color-card-red-400: hsl(354, 100%, 66%);
+  --color-card-gray-50: hsl(225, 100%, 99%);
+  --color-card-gray-100: hsl(0, 0%, 92%);
   --color-card-gray-400: hsl(0, 0%, 59%);
-  --color-card-blue-950: hsl(209, 33%, 12%);
+  --color-card-red-400: hsl(354, 100%, 66%);
+  --color-card-green-500: hsl(145, 63%, 49%);
   --font-sans: 'Libre Franklin', ui-sans-serif, system-ui, sans-serif;
   --spacing-card-0: 0rem;
   --spacing-card-100: 0.5rem; /* 8px */
@@ -27,4 +30,75 @@
   body {
     background-color: white;
   }
+}
+
+@utility text-preset-1-bold {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-1-light {
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-2-bold {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-2-light {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-3-semibold {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-3-light {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-4-semibold {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-4-light {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-4-italic {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@utility text-preset-5 {
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+  font-style: italic;
 }
