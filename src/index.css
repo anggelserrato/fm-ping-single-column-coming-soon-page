@@ -58,6 +58,10 @@
   font-size: 1.25rem;
   line-height: 1.25;
   letter-spacing: normal;
+
+  @variant md {
+    font-size: 3rem;
+  }
 }
 
 @utility text-preset-3-semibold {
@@ -79,13 +83,21 @@
   font-size: 0.75rem;
   line-height: 1.25;
   letter-spacing: normal;
+
+  @variant md {
+    font-size: 1rem;
+  }
 }
 
 @utility text-preset-4-light {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 0.75rem;
   line-height: 1.25;
   letter-spacing: normal;
+
+  @variant md {
+    font-size: 1.25rem;
+  }
 }
 
 @utility text-preset-4-italic {
